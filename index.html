@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyNails - Studio Manicure & Nail Art</title>
+    <title>Kekynails - Studio Manicure & Nail Art</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -60,11 +60,14 @@
     </section>
 
     <section id="prenota" class="section">
-        <h2>Prenota un Appuntamento</h2>
+        <h2>PRENOTA IL TUO TRATTAMENTO</h2>
         <form id="booking-form" class="booking-form">
             
+            <label for="name">Nome e Cognome:</label>
+            <input type="text" id="name" placeholder="Maria Rossi" required>
+
             <label for="service">Scegli il Trattamento:</label>
-            <select id="service" name="Trattamento" required>
+            <select id="service" required>
                 <option value="">-- Seleziona Trattamento --</option>
                 <option value="Semirinforzato">Semirinforzato (20€)</option>
                 <option value="Gel / Ritocco">Gel / Ritocco (25€)</option>
@@ -73,10 +76,10 @@
             </select>
 
             <label for="date">Scegli la Data:</label>
-            <input type="date" id="date" name="Data" required>
+            <input type="date" id="date" required>
 
             <label for="time">Scegli l'Orario:</label>
-            <select id="time" name="Orario" required>
+            <select id="time" required>
                 <option value="">-- Seleziona Orario --</option>
                 <option value="09:00">09:00</option>
                 <option value="10:30">10:30</option>
@@ -85,15 +88,7 @@
                 <option value="17:00">17:00</option>
             </select>
 
-            <label for="name">Nome e Cognome:</label>
-            <input type="text" id="name" name="Nome Cliente" placeholder="Maria Rossi" required>
-
-            <label for="phone">Telefono:</label>
-            <input type="tel" id="phone" name="Telefono" placeholder="333 1234567" required>
-
-            <button type="submit" class="btn">Conferma Prenotazione</button>
-
-            <div id="status-message" style="display:none; margin-top:15px; font-weight:bold; text-align:center;"></div>
+            <button type="submit" class="btn">PRENOTA</button>
         </form>
     </section>
 
@@ -110,4 +105,4 @@
 
     <script src="./script.js"></script>
 </body>
-</html>           
+</html>
