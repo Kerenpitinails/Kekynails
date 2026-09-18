@@ -26,7 +26,7 @@
         
         <div class="gallery">
             <div class="card-photo">
-                <img src="https://i.postimg.cc/x8dSr5h4/Gemini-Generated-Image-rcc840rcc840rcc8.jpg" alt="Manicure e Nail Art 1">
+                <img src="https://i.postimg.cc/Bn3f4Jr7/Gemini-Generated-Image-otfaa0otfaa0otfa.jpg" alt="Manicure e Nail Art 1">
             </div>
             <div class="card-photo">
                 <img src="https://i.postimg.cc/x8dSr5h4/Gemini-Generated-Image-rcc840rcc840rcc8.jpg" alt="Manicure e Nail Art 2">
@@ -65,6 +65,49 @@
                 <option value="">-- Seleziona Trattamento --</option>
                 <option value="Semirinforzato">Semirinforzato (20€)</option>
                 <option value="Gel / Ritocco">Gel / Ritocco (25€)</option>
+                <option value="Ricostruzione Gel">Ricostruzione Gel (35€)</option>
+                <option value="Pedicure">Pedicure (15€)</option>
+            </select>
+
+            <label for="date">Scegli la Data:</label>
+            <input type="date" id="date" name="Data" required>
+
+            <label for="time">Scegli l'Orario:</label>
+            <select id="time" name="Orario" required>
+                <option value="">-- Seleziona Orario --</option>
+                <option value="09:00">09:00</option>
+                <option value="10:30">10:30</option>
+                <option value="14:00">14:00</option>
+                <option value="15:30">15:30</option>
+                <option value="17:00">17:00</option>
+            </select>
+
+            <label for="name">Nome e Cognome:</label>
+            <input type="text" id="name" name="Nome Cliente" placeholder="Maria Rossi" required>
+
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="Telefono" placeholder="333 1234567" required>
+
+            <button type="submit" class="btn">Conferma Prenotazione</button>
+
+            <div id="status-message" style="display:none; margin-top:15px; font-weight:bold; text-align:center;"></div>
+        </form>
+    </section>
+
+    <section id="contatti" class="section bg-light">
+        <h2>Contatti & Studio</h2>
+        <p>📍 Via Roma 123, Milano</p>
+        <p>📞 WhatsApp: +39 333 1234567</p>
+        <p>🕒 Lun - Sab: 09:00 - 19:00</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BeautyNails - Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>                <option value="Gel / Ritocco">Gel / Ritocco (25€)</option>
                 <option value="Ricostruzione Gel">Ricostruzione Gel (35€)</option>
                 <option value="Pedicure">Pedicure (15€)</option>
             </select>
